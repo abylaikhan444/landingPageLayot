@@ -1,0 +1,92 @@
+body { 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+
+}
+
+.logo-part {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.logo-part p {
+    font-weight: 900;
+    font-size: 18px;
+
+}
+
+.nav-text {
+    display: flex;
+    /* align-items: center; */
+    width: 350px;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.nav-text ul { 
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.nav-text li {
+    display: flex;
+    gap: 30px;
+
+}
+
+.nav-text p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.log-start-button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.log-text a { 
+    text-decoration: none;
+    color: #000;
+
+}
+
+.log-text p {
+    font-weight: 400;
+
+}
+
+.start-button button {
+    width: 130px;
+    height: 50px;
+    background-color: #0066FF;
+    color: #ffffff;
+    border: none;
+    /* pointer-events: ; */
+    font-weight: 600;
+    font-size: 15px;
+}
+
