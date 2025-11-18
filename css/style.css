@@ -5,6 +5,8 @@ body {
 
 }
 
+/* NAVBAR PART */
+
 nav {
     height: 70px;
     background-color: #ffffff;
@@ -88,5 +90,9 @@ nav {
     /* pointer-events: ; */
     font-weight: 600;
     font-size: 15px;
+    border-radius: 4px;
 }
+
+
+/* WELCOME PART */
 
