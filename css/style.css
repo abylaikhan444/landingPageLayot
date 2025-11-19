@@ -1,4 +1,4 @@
-body { 
+body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -13,6 +13,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 
 }
 
@@ -38,12 +39,12 @@ nav {
 
 }
 
-.nav-text ul { 
+.nav-text ul {
     display: flex;
     list-style: none;
     padding: 0;
     align-items: center;
-    
+
 }
 
 .nav-text a {
@@ -70,7 +71,7 @@ nav {
 
 }
 
-.log-text a { 
+.log-text a {
     text-decoration: none;
     color: #000;
 
@@ -93,6 +94,15 @@ nav {
     border-radius: 4px;
 }
 
+
+@media (max-width: 768px) {
+    nav {
+        gap: 50px;
+        padding: 0 20px;
+        flex-wrap: wrap;
+
+    }
+}
 
 /* WELCOME PART */
 
