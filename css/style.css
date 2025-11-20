@@ -88,7 +88,7 @@ nav {
     background-color: #0066FF;
     color: #ffffff;
     border: none;
-    /* pointer-events: ; */
+    cursor: pointer;
     font-weight: 600;
     font-size: 15px;
     border-radius: 5px;
@@ -96,7 +96,7 @@ nav {
 
 
 @media (max-width: 1024px) {
-    
+    /*  */
 }
 
 
@@ -111,4 +111,85 @@ nav {
 
 /* WELCOME PART */
 
+.main-part {
+    display: flex;
+    justify-content: center;
+}
 
+.form-wrapper {
+    display: flex;
+    border: 3px solid #4169ff;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    width: 400px;
+}
+
+.email-input {
+    flex: 1;
+    padding: 16px 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    color: #333;
+}
+
+.email-input::placeholder {
+    color: #999;
+}
+
+.trial-button {
+    background: #4169ff;
+    color: white;
+    border: none;
+    padding: 16px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    justify-content: center;
+}
+
+.trial-button:hover {
+    background: #3151d9;
+}
+
+.trial-button:active {
+    transform: scale(0.98);
+}
+
+.arrow {
+    font-size: 18px;
+}
+
+
+.main-img-elements {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(6, 1fr); /* 6 единиц – удобнее для span */
+    grid-auto-rows: 100% /* высота «строки» — контролируемая */
+
+}
+
+.large-card-img {
+    grid-column: span 1;
+    grid-row: span 2;
+    
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+    .form-wrapper {
+        flex-direction: column;
+    }
+    
+    .trial-button {
+        justify-content: center;
+    }
+}
