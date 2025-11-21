@@ -168,20 +168,44 @@ nav {
     font-size: 18px;
 }
 
-
-.main-img-elements {
-    display: grid;
-    gap: 12px;
-    grid-template-columns: repeat(6, 1fr); /* 6 единиц – удобнее для span */
-    grid-auto-rows: 100% /* высота «строки» — контролируемая */
-
-}
-
-.large-card-img {
-    grid-column: span 1;
-    grid-row: span 2;
+.main-part {
     
 }
+
+.main-info-elements {
+
+
+
+}
+
+.main-info-elements h1 {
+    font-size: 56px;
+    font-weight: 900;
+
+}
+
+.main-info-elements p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.main-img-elements {
+    display: flex;
+
+}
+
+.left-side-cards {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.right-side-cards {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 
 /* Адаптивность */
 @media (max-width: 480px) {
