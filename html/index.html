@@ -43,9 +43,9 @@
                 <h1>
                     Display Instagram Stories
                     <br>
-                    on any website, in seconds.
+                    on any website, <span style="background-color: #faed32;">in seconds.</span>
                 </h1>
-                <p>
+                <p class="main-text">
                     Display Instagram Stories Widget on your website, that auto-syncs,<br>
                     and updates each time you add a photo in your active story. 
                 </p>
@@ -56,9 +56,11 @@
                         <span class="arrow">→</span>
                     </button>
                 </div>
-                <p class="subcribe-info">
-                    Free 7-day trial | Easy setup | Cancel any time
-                </p>
+                <div class="subcribe-info">
+                    <p>
+                        Free 7-day trial | Easy setup | Cancel any time
+                    </p>
+                </div>
             </div>
             <div class="main-img-elements">
                 <div class="left-side-cards">
@@ -71,12 +73,56 @@
                 </div>
             </div>
         </div>
-        <div class="our-brands-list">
-
-        </div>
         
-
+        <div class="our-brands-list">    
+            <span>
+                Join 50.000+ websites that use
+                EmbedSocial to sell more
+            </span>
+        </div>
+        <div class="brands-logo">
+            <img src="/image/logo-img/cnn.png" alt="">
+            <img src="/image/logo-img/netgeo.png" alt="">
+            <img src="/image/logo-img/florence.png" alt="">
+            <img src="/image/logo-img/ancestry-logo 1.png" alt="">
+            <img src="/image/logo-img/industrious 1.png" alt="">
+            <img src="/image/logo-img/nike.png" alt="">
+        </div>            
     </main>
 
+    <section class="slider-part">
+    <!-- основной контейнер слайдера -->
+    <div class="slider" id="mySlider" aria-roledescription="carousel">
+      <!-- полоса слайдов (track) -->
+      <div class="slider-track">
+        <div class="slide" data-index="0">
+          <img src="/image/slider-imgs/first-slide.webp" alt="Яркие фрукты — слайд 1">
+        </div>
+
+        <div class="slide" data-index="1">
+          <img src="/image/slider-imgs/second-slide.webp" alt="Яркие фрукты — слайд 2">
+        </div>
+
+        <div class="slide" data-index="2">
+          <img src="/image/slider-imgs/third-slide.webp" alt="Яркие фрукты — слайд 3">
+        </div>
+      </div>
+
+      <!-- кнопки назад/вперед -->
+      <button class="slider-btn slider-btn--prev" aria-label="Previous slide" data-action="prev">
+        <!-- простой SVG стрелка -->
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6 L9 12 L15 18" stroke="none" /></svg>
+      </button>
+
+      <button class="slider-btn slider-btn--next" aria-label="Next slide" data-action="next">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 L15 12 L9 18" stroke="none" /></svg>
+      </button>
+
+      <!-- индикаторы (точки) -->
+      <div class="dots" role="tablist" aria-label="Slide dots"></div>
+    </div>
+  </section>
+
+  <script src="/js/slider.js"></script>
 </body>
 </html>

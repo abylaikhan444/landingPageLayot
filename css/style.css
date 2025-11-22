@@ -111,9 +111,17 @@ nav {
 
 /* WELCOME PART */
 
+main {
+    background-color: #d6dae4af;
+    padding-bottom: 50px;
+}
+
 .main-part {
     display: flex;
     justify-content: center;
+    gap: 20px;
+    padding-top: 100px;
+
 }
 
 .form-wrapper {
@@ -124,6 +132,7 @@ nav {
     background: white;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
     width: 400px;
+    margin-top: 50px;
 }
 
 .email-input {
@@ -168,13 +177,10 @@ nav {
     font-size: 18px;
 }
 
-.main-part {
-    
-}
 
-.main-info-elements {
-
-
+.subcribe-info p {
+    font-size: 14px;
+    font-weight: 400;
 
 }
 
@@ -182,9 +188,10 @@ nav {
     font-size: 56px;
     font-weight: 900;
 
+
 }
 
-.main-info-elements p {
+.main-text p {
     font-size: 18px;
     font-weight: 400;
 }
@@ -207,13 +214,127 @@ nav {
 }
 
 
-/* Адаптивность */
-@media (max-width: 480px) {
-    .form-wrapper {
-        flex-direction: column;
-    }
-    
-    .trial-button {
-        justify-content: center;
-    }
+.our-brands-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #9CA0AC;
+    font-weight: 500;
+
+}
+
+
+.brands-logo { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+
+
+/* slider part */
+
+
+ /* ===== КОНТЕЙНЕР СЛАЙДЕРА ===== */
+.slider-part{
+    width: 50%;
+    margin: 0 auto; /* центрируем */
+    margin-top: 50px;
+}
+
+.slider{
+    position: relative;
+    overflow: hidden;                 /* прячет невидимые части слайдов */
+    width: var(--slider-width);
+    height: var(--slider-height);
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+/* ===== ПОЛОСА СЛАЙДОВ ===== */
+.slider-track{
+    display: flex;                    /* выстраивает слайды в ряд */
+    height: 100%;
+    transition: transform 450ms cubic-bezier(.22,.9,.32,1); /* плавный переход */
+    will-change: transform;    
+           /* hint для браузера */
+}
+
+.slide{
+    min-width: 100%;                  /* каждый слайд занимает 100% контейнера */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 18px;                    /* небольшой отступ внутренней карточки */
+    box-sizing: border-box;
+
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                /* изображение заполняет блок без искажения */
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ===== КНОПКИ НАВИГАЦИИ ===== */
+.slider-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.85);
+    border: 0;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: background .2s;
+}
+.slider-btn:hover { background: rgba(255,255,255,1); }
+
+.slider-btn--prev { left: 12px; }
+.slider-btn--next { right: 12px; }
+
+.slider-btn svg { width: 18px; height: 18px; fill: var(--accent); }
+
+/* ===== ТОЧКИ (INidCATOR) ===== */
+.dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 12px;
+    display: flex;
+    gap: 8px;
+}
+
+.dot{
+    width: var(--dot-size);
+    height: var(--dot-size);
+    border-radius: 50%;
+    background: rgba(0,0,0,0.18);
+    cursor: pointer;
+    transition: transform .18s, background .18s;
+}
+.dot.active{
+    background: var(--accent);
+    transform: scale(1.2);
+}
+
+/* ===== MOBILE: уменьшаем высоту ===== */
+@media (max-width: 640px){
+    :root { --slider-height: 320px; }
+    .slider-btn { height: 38px; width: 38px; }
 }
